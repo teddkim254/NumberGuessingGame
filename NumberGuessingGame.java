@@ -34,6 +34,7 @@ public class NumberGuessingGame {
             break; // leave the retry loop
           } catch (InputMismatchException e) {
             System.out.println("Invalid Input! Please enter a whole number!");
+            scanner.nextLine(); // discard the invalid input from buffer (memory!)
           }
         }
 
